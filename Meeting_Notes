@@ -1,1 +1,37 @@
 
+November 8th, 2017: 
+Each CUDA block will be responsible for calculating the estimated displacement for one point in the image. 
+Each thread performs cross correlation for two matrices of size = processing kernel size.  (nested for loops) 
+Each block will calculate the index containing the peak CC value. 
+The kernel will send back the axial and lateral displacement map. 
+In shared memory: pre data, CC map
+For next time: 
+Rob - xcorr implementation hw style
+Rashid – looking into .mex file 
+Michael – looking into sorting/peak finding and max index. 
+
+
+November 10th, 2017
+Profiling the MATLAB code (linux)
+Recommendations to pre-allocate matrices for speed. pad_level_x,y cells, commented out some unused variables. 
+Normxcorr2_mex is taking 80% of the time. 
+
+
+November 13th, 2017
+Debugged the cuda kernel. The center value is correct for for 5x5 matrix. Tested with matlab generated array. 
+Need to pass structure to mex and from mex to kernel.
+Do max inside of the kernel along with the subsample displacement?
+
+MATLAB code: 
+im = randi([-10 10],50,1)';
+fileID = fopen('testInputs.inp','w');
+fprintf(fileID,'%i \r\n',im);
+fclose(fileID);
+
+November 16th, 2017
+Discussed execution model for multilevel algorithm and data structures. 
+
+November 17th, 2017
+Implemented a new iteration of the cuda kernel for CC. Results are agreeing 100% with MATLAB. 
+
+
