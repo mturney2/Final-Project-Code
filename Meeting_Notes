@@ -32,6 +32,11 @@ November 16th, 2017
 Discussed execution model for multilevel algorithm and data structures. 
 
 November 17th, 2017
-Implemented a new iteration of the cuda kernel for CC. Results are agreeing 100% with MATLAB. 
+Implemented a new iteration of the cuda kernel for CC. Results are not agreeing 100% with MATLAB. 
 
+November 20th, 2017
+Some bugs in the code. Results are now agreeing 100% with MATLAB. 
+
+November 22nd, 2017
+Team meeting to discuss next steps for project. 
 
