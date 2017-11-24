@@ -1,3 +1,4 @@
+RP = Robert Pohlman, MT = Michael Turney, RM = Rashid Al Mukaddim
 
 November 8th, 2017: 
 Each CUDA block will be responsible for calculating the estimated displacement for one point in the image. 
@@ -14,13 +15,13 @@ Michael – looking into sorting/peak finding and max index.
 November 10th, 2017
 Profiling the MATLAB code (linux)
 Recommendations to pre-allocate matrices for speed. pad_level_x,y cells, commented out some unused variables. 
-Normxcorr2_mex is taking 80% of the time. 
+Normxcorr2_mex is taking 80% of the time. (RM,MT)
 
 
 November 13th, 2017
 Debugged the cuda kernel. The center value is correct for for 5x5 matrix. Tested with matlab generated array. 
 Need to pass structure to mex and from mex to kernel.
-Do max inside of the kernel along with the subsample displacement?
+Do max inside of the kernel along with the subsample displacement? (RM,RP,MT)
 
 MATLAB code: 
 im = randi([-10 10],50,1)';
@@ -29,14 +30,14 @@ fprintf(fileID,'%i \r\n',im);
 fclose(fileID);
 
 November 16th, 2017
-Discussed execution model for multilevel algorithm and data structures. 
+Discussed execution model for multilevel algorithm and data structures. (RM,MT)
 
 November 17th, 2017
-Implemented a new iteration of the cuda kernel for CC. Results are not agreeing 100% with MATLAB. 
+Implemented a new iteration of the cuda kernel for CC. Results are not agreeing 100% with MATLAB. (RM,MT)
 
 November 20th, 2017
-Some bugs in the code. Results are now agreeing 100% with MATLAB. 
+Some bugs in the code. Results are now agreeing 100% with MATLAB. (RM,MT)
 
 November 22nd, 2017
-Team meeting to discuss next steps for project. 
+Team meeting to discuss next milestones for the project. RM presented all the changes since Nov 13th. (RP) will look into shared memory with post data. We want to get the mex setup working and profile the code. 
 
