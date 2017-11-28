@@ -41,3 +41,9 @@ Some bugs in the code. Results are now agreeing 100% with MATLAB. (RM,MT)
 November 22nd, 2017
 Team meeting to discuss next milestones for the project. RM presented all the changes since Nov 13th. (RP) will look into shared memory with post data. We want to get the mex setup working and profile the code. 
 
+November 27th, 2017
+Post data into shared memory almost completed with few bugs. (RP)
+
+November 28th, 2017
+Discussed Shared Memory usage. Determined that using shared memory for post means/variances will go outside of allotted shared memory. Decided to share (fixed) pre data instead of post data. (RM,RP)
+Began investigation of using nvvp. (MT)
