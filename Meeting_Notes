@@ -59,3 +59,32 @@ Issues:
 2) Peak finding fails for large CC maps. Investigating today.
 3) Need to investigate the data transfer overhead between MATLAB and the GPU. (matlab to mex, mex to cuda)
 4) Investigate pinned memory for pre and post. 
+
+December 1st, 2017
+Continued work on reduction kernel. Finding correct max but wrong index. (RP)
+Organized code files and uploaded to github. (ALL)
+Setup VPN software and static IP in order to remote into CN18 off campus. (ALL)
+Padded data outside the kernel, saw 2x speedup. (RM, MT)
+
+December 4th, 2017
+Discussed current project status with Dr. Negrut. A few notes: 
+1. Put pre in shared memory...one block per sm. Will have nice coalesced memory accesses. Only reading data so no sbconflicts. 
+2. Multiple blocks for large search regions. Combine results at the end on GPU or CPU. 
+3. Thrust: Wrapped array of row pointers. Want to pass the data only once to find the max and index.
+
+December 5th, 2017
+Put pre matrix in shared memory (MT). Saw speed up of ~100ms. 
+Investigated thrust for CC matrix peak finding (RM, RP). 
+Implemented thrust peak finding and analyzed timing. 
+Implemented a peak finding method in separate kernel. (RP) Checked for accuracy (RP & RM)
+Integration of shared memory and new reduction kernel in the final code version. (MT & RP)
+
+December 6th, 2017
+Final code compilation and testing. (MT & RP)
+Modifying MEX to support final code version. (RM)
+Testing code on other datasets and starting scaling analysis. (RP, MT)
+
+December 7th,2017
+Tracking down a bug in the latest version of the code. Either in peak finding or subsample displacement estimation. (ALL)
+Verison 5 with the MATLAB peak finding and subsample displacement gives correct results. 
+
