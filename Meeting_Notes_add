@@ -1,0 +1,81 @@
+RP = Robert Pohlman, MT = Michael Turney, RM = Rashid Al Mukaddim
+
+November 8th, 2017: 
+Each CUDA block will be responsible for calculating the estimated displacement for one point in the image. 
+Each thread performs cross correlation for two matrices of size = processing kernel size.  (nested for loops) 
+Each block will calculate the index containing the peak CC value. 
+The kernel will send back the axial and lateral displacement map. 
+In shared memory: pre data, CC map
+For next time: 
+Rob - xcorr implementation hw style
+Rashid – looking into .mex file 
+Michael – looking into sorting/peak finding and max index. 
+
+
+November 10th, 2017
+Profiling the MATLAB code (linux)
+Recommendations to pre-allocate matrices for speed. pad_level_x,y cells, commented out some unused variables. 
+Normxcorr2_mex is taking 80% of the time. (RM,MT)
+
+
+November 13th, 2017
+Debugged the cuda kernel. The center value is correct for for 5x5 matrix. Tested with matlab generated array. 
+Need to pass structure to mex and from mex to kernel.
+Do max inside of the kernel along with the subsample displacement? (RM,RP,MT)
+
+MATLAB code: 
+im = randi([-10 10],50,1)';
+fileID = fopen('testInputs.inp','w');
+fprintf(fileID,'%i \r\n',im);
+fclose(fileID);
+
+November 16th, 2017
+Discussed execution model for multilevel algorithm and data structures. (RM,MT)
+
+November 17th, 2017
+Implemented a new iteration of the cuda kernel for CC. Results are not agreeing 100% with MATLAB. (RM,MT)
+
+November 20th, 2017
+Some bugs in the code. Results are now agreeing 100% with MATLAB. Use multidimensional array to store the data instead of structures. (RM,MT)
+
+November 22nd, 2017
+Team meeting to discuss next milestones for the project. RM presented all the changes since Nov 13th. (RP) will look into shared memory with post data. We want to get the mex setup working and profile the code. 
+
+November 27th, 2017
+Post data into shared memory almost completed with few bugs. Not possible because of size? (RP)
+
+November 28th, 2017
+Discussed Shared Memory usage. Determined that using shared memory for post means/variances will go outside of allotted shared memory. Decided to share (fixed) pre data instead of post data. (RM,RP)
+Began investigation of using nvvp. (MT)
+Further investigation of Constant memory vs Texture memory. (RP)
+
+November 30th, 2017
+Created initial files for presentation and final paper document (RP)
+Analyzed current implementation in NVPP. Look for optimization opportunities. (RM, MT)
+
+December 1st, 2017
+Continued work on reduction kernel. Finding correct max but wrong index. (RP)
+Organized code files and uploaded to github. (ALL)
+Setup VPN software and static IP in order to remote into CN18 off campus. (ALL)
+Padded data outside the kernel, saw 2x speedup. (RM, MT)
+
+December 4th, 2017
+Discussed current project status with Dr. Negrut. A few notes: 
+1. Put pre in shared memory...one block per sm. Will have nice coalesced memory accesses. Only reading data so no sbconflicts. 
+2. Multiple blocks for large search regions. Combine results at the end on GPU or CPU. 
+3. Thrust: Wrapped array of row pointers. Want to pass the data only once to find the max and index.
+
+December 5th, 2017
+Put pre matrix in shared memory (MT). Saw speed up of ~100ms. 
+Investigated thrust for CC matrix peak finding (RM, RP). 
+Implemented thrust peak finding and analyzed timing. 
+Implemented a peak finding method in separate kernel. (RP) Checked for accuracy (RP & RM)
+Integration of shared memory and new reduction kernel in the final code version. (MT & RP)
+
+December 6th, 2017
+Final code compilation and testing. (MT & RP)
+Modifying MEX to support final code version. (RM)
+Testing code on other datasets and starting scaling analysis. (RP, MT)
+
+
+
