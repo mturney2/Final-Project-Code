@@ -11,7 +11,7 @@
 * Presentation
 
 ## Instructions to Run Demo
-1. Download ./DEMO and ./Final Code with Surface Fit
+1. Download './DEMO' and './Final Code with Surface Fit'
 2.
 3.
 4.
@@ -19,4 +19,6 @@
 
 
 
-![Image of Yaktocat](https://github.com/mturney2/Final-Project-Code/blob/master/DEMO/MATLAB_FILE.png)
+![Image of CODE](https://github.com/mturney2/Final-Project-Code/blob/master/DEMO/MATLAB_FILE.png)
+![Image of RESULT](https://github.com/mturney2/Final-Project-Code/blob/master/DEMO/MATLAB_OUTPUT.png)
+![Image of IMG_RESULT](https://github.com/mturney2/Final-Project-Code/blob/master/DEMO/MATLAB_IMAGE.png)
