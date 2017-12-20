@@ -1,8 +1,8 @@
 # Accelerating Ultrasound Elasticity Imaging with a CUDA-MATLAB Approach
 
 ## Contents  
-  *Code Versions from V0 to V3  
-  *Final Code w/ and w/o surface fitting
+*Code Versions from V0 to V3  
+*Final Code w/ and w/o surface fitting
 
 
 ## Instructions to Run Demo
