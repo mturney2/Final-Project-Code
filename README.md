@@ -19,6 +19,9 @@
 
 
 
-![Image of CODE](https://github.com/mturney2/Final-Project-Code/blob/master/DEMO/MATLAB_FILE.png)
-![Image of RESULT](https://github.com/mturney2/Final-Project-Code/blob/master/DEMO/MATLAB_OUTPUT.png)
-![Image of IMG_RESULT](https://github.com/mturney2/Final-Project-Code/blob/master/DEMO/MATLAB_IMAGE.png)
+![Image of CODE_1](https://github.com/mturney2/Final-Project-Code/blob/master/DEMO/FILE_1.png)
+![Image of CODE_2](https://github.com/mturney2/Final-Project-Code/blob/master/DEMO/FILE_2.png)
+![Image of CODE_3](https://github.com/mturney2/Final-Project-Code/blob/master/DEMO/FILE_3.png)
+![Image of CODE_4](https://github.com/mturney2/Final-Project-Code/blob/master/DEMO/FILE_4.png)
+![Image of RESULT](https://github.com/mturney2/Final-Project-Code/blob/master/DEMO/OUTPUT.png)
+![Image of IMG_RESULT](https://github.com/mturney2/Final-Project-Code/blob/master/DEMO/resultppt.png)
