@@ -11,7 +11,7 @@
 * Presentation
 
 ## Instructions to Run Demo
-1. Download ./DEMO
+1. Download ./DEMO and ./Final Code with Surface Fit
 2.
 3.
 4.
