@@ -23,4 +23,4 @@
 
 
 
-![Image of Yaktocat](https://github.com/mturney2/Final-Project-Code/blob/master/DEMO/DEMO_run_result.pdf)
+![Image of Yaktocat](https://github.com/mturney2/Final-Project-Code/DEMO/MATLAB_FILE.png)
