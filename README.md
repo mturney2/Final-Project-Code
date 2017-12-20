@@ -19,8 +19,4 @@
 
 
 
-
-
-
-
-![Image of Yaktocat](https://github.com/mturney2/Final-Project-Code/DEMO/MATLAB_FILE.png)
+![Image of Yaktocat](https://github.com/mturney2/Final-Project-Code/blob/master/DEMO/MATLAB_FILE.png)
