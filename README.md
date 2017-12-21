@@ -6,7 +6,7 @@
 * Demo_C, Demo_MATLAB: The final version of the code made available as demo. 
 * Mex and MATLAB work: 
 * MATLAB Verification
-* Miscellaneous: Literature resources, meeting notes, report files. 
+* Miscellaneous: Literature resources, meeting notes, report files, image files for this page. 
 
 # Instructions for Executing Demo Code
 
@@ -50,3 +50,6 @@ The input arguments associated with the execution call are:
 
 4. Sample Output:  
 ![Image of CODE_1](https://github.com/mturney2/Final-Project-Code/blob/master/Images/eulerOut.PNG)
+
+## Sample Displacement Estimation Results
+![Image of CODE_1](https://github.com/mturney2/Final-Project-Code/blob/master/Images/matlabOutput.PNG)
