@@ -23,7 +23,7 @@
 ```
 4. Run `main.m` in MATLAB. `main.m` will load two pre/post frames of ultrasound images and perform the displacement estimation using the GPU code.  
 5. Sample Output:  
-![Image of CODE_1](https://github.com/mturney2/Final-Project-Code/blob/master/Images/matlabOutput.PNG)
+![Image of CODE_1](https://github.com/mturney2/Final-Project-Code/blob/master/Miscellaneous/Images/matlabOutput.PNG)
 
 ======>>>>> For a Windows system...
    
