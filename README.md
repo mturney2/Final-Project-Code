@@ -49,7 +49,7 @@ The input arguments associated with the execution call are:
 3. `Demo_C` also contains a Makefile which can be used to recompile the code, if neccessary. 
 
 4. Sample Output:  
-![Image of CODE_1](https://github.com/mturney2/Final-Project-Code/blob/master/Images/eulerOut.PNG)
+![Image of CODE_1](https://github.com/mturney2/Final-Project-Code/blob/master/Miscellaneous/Images/eulerOut.PNG)
 
 ## Sample Displacement Estimation Results
 
