@@ -2,7 +2,7 @@
 
 ## Repository Contents  
 * Archived Code: Initial implementation and versions from a major update. 
-* Final Code: The final version of the code which will be used in our lab. Available with & without surface fitting. 
+* Final Code: The final version of the code which will be used in our lab. Available with and without surface fitting. 
 * Demo_C, Demo_MATLAB: The final version of the code made available as demo. 
 * Mex and MATLAB work: 
 * MATLAB Verification
