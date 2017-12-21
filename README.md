@@ -1,16 +1,13 @@
 # Accelerating Ultrasound Elasticity Imaging with a CUDA-MATLAB Approach
 
-## Contents  
-* Code Versions from V0 to V3  
-* Final Code w/ and w/o surface fitting
-* Mex and MATLAB work
+## Repository Contents  
+* Archived Code: Initial implementation and versions from a major update. 
+* Demo_C, Demo_MATLAB: The final version of the code made available as demo. 
+* Mex and MATLAB work: 
 * MATLAB Verification
-* Literature Resources
-* Meeting Notes
-* Report
-* Presentation
+* Miscellaneous: Literature resources, meeting notes, report files. 
 
-# Instructions
+# Special Instructions
 
 ## Prerequisites to Run Demo
 1. There are two options to execute the project code. On GPU with MATLAB or by executing directly on the GPU as we have typically done for this course. MATLAB is perferred to maintain a similar algorithm framework. Both of the codes have been developed in the Varghese Ultrasound Lab's GPU, the Tesla K40. However, we have also tested the C version in the euler99 node(sample image below). The timings and accuracy reported in the course paper is based on Tesla K40. 
