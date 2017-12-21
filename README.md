@@ -6,7 +6,7 @@
 * Demo_C, Demo_MATLAB: The final version of the code made available as demo. 
 * Mex and MATLAB work: 
 * MATLAB Verification
-* Miscellaneous: Literature resources, meeting notes, report files, image files for this page. 
+* Miscellaneous: Literature resources, meeting notes, report files, image files for this page, images. 
 
 # Instructions for Executing Demo Code
 
