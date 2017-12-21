@@ -53,5 +53,5 @@ The input arguments associated with the execution call are:
 
 ## Sample Displacement Estimation Results
 
-![Image of CODE_1](https://github.com/mturney2/Final-Project-Code/blob/master/Images/displacement_estimated.png)
+![Image of CODE_1](https://github.com/mturney2/Final-Project-Code/blob/master/Miscellaneous/Images/displacement_estimated.png)
 
