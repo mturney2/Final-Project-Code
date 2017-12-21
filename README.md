@@ -8,9 +8,9 @@
 * MATLAB Verification
 * Miscellaneous: Literature resources, meeting notes, report files. 
 
-# Special Instructions
+# Instructions for Executing Demo Code
 
-## Prerequisites to Run Demo
+## Prerequisites 
 1. There are two options to execute the project code. On GPU with MATLAB or by executing directly on the GPU as we have typically done for this course. MATLAB is perferred to maintain a similar algorithm framework. Both of the codes have been developed in the Varghese Ultrasound Lab's GPU, the Tesla K40. However, we have also tested the C version in the euler99 node(sample image below). The timings and accuracy reported in the course paper is based on Tesla K40. 
 
 ## Steps to Run MATLAB Demo (preferred)
