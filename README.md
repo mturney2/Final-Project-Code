@@ -4,8 +4,6 @@
 * Archived Code: Initial implementation and versions from a major update. 
 * Final Code: The final version of the code which will be used in our lab. Available with and without surface fitting. 
 * Demo_C, Demo_MATLAB: The final version of the code made available as demo. 
-* Mex and MATLAB work: 
-* MATLAB Verification
 * Miscellaneous: Literature resources, meeting notes, report files, image files for this page, images. 
 
 # Instructions for Executing Demo Code
@@ -25,8 +23,7 @@
 5. Sample Output:  
 ![Image of CODE_1](https://github.com/mturney2/Final-Project-Code/blob/master/Miscellaneous/Images/matlabOutput.PNG)
 
-======>>>>> For a Windows system...
-   
+  
 ## Steps to Run C/CUDA Demo
 0. A C demo is also included in case the system doesn't have MATLAB support. 
 1. Clone the code repository `./Demo_C` and download the files to a local directory. `Demo_C` contains the neccessary input files. 
